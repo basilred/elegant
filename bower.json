@@ -9,6 +9,7 @@
     "libs"
   ],
   "dependencies": {
-    "bem-components": "2.4.0"
+    "bem-components": "2.4.0",
+    "bem-grid": "^2.3.2"
   }
 }

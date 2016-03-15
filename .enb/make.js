@@ -27,6 +27,7 @@ var techs = {
         { path: 'libs/bem-components/desktop.blocks', check: false },
         { path: 'libs/bem-components/design/common.blocks', check: false },
         { path: 'libs/bem-components/design/desktop.blocks', check: false },
+        { path: 'libs/bem-grid/common.blocks', check: false },
         'common.blocks',
         'desktop.blocks'
     ];
@@ -45,10 +46,21 @@ module.exports = function(config) {
 
             // css
             [techs.stylus, {
-                target: '?.css',
+                target: '?.stylus.css',
                 sourcemap: false,
                 autoprefixer: {
                     browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
+                }
+            }],
+
+            // bem-grid
+            [require('bem-grid').enb, {
+                source: '?.stylus.css',
+                target: '?.css',
+                config : {
+                    maxWidth : '980px',
+                    gutter : '10px',
+                    flex : 'flex'
                 }
             }],
 
