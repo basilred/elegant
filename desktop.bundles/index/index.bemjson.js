@@ -12,28 +12,71 @@ module.exports = {
     mods : { theme : 'elegant' },
     content : [
         {
-            block : 'row',
+            block : 'header',
             content : [
                 {
-                    elem : 'col',
-                    elemMods : { sw : 2, mw : 4, lw : 12, xl : 12, xxl : 12 },
+                    block : 'row',
+                    mix : [ { block : 'header', elem : 'menu-row' } ],
                     content : [
-                        'Первая колонка'
-                    ]
-                },
-                {
-                    elem : 'col',
-                    elemMods : { sw : 10, mw : 8, lw : 0, xl : 0, xxl : 0 },
-                    content : [
-                        'Вторая колонка'
+                        {
+                            block : 'logo',
+                            mix : [ { block : 'header', elem : 'logo' } ],
+                        },
+                        {
+                            block : 'menu',
+                            mix : [ { block : 'header', elem : 'menu' } ],
+                            content : [
+                                'Menu'
+                            ]
+                        },
+                        {
+                            elem : 'col',
+                            elemMods : { lw : 12 },
+                            content : [
+                                {
+                                    block : 'header',
+                                    elem : 'text',
+                                    content : [
+                                        'Say <span>Haloa</span> to your Portfolio'
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
         },
         {
-            block : 'footer',
+            block : 'about',
             content : [
-                'footer content goes here'
+                {
+                    block : 'caption',
+                    pre : 'Who we Are',
+                    text : 'Tell The World About Yourself'
+                },
+                {
+                    block : 'about',
+                    elem : 'text',
+                    content : [
+                        'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.'
+                    ]
+                },
+                {
+                    block : 'button',
+                    mix : [ { block : 'about', elem : 'button' } ],
+                    mods : { theme : 'elegant' },
+                    text : 'Read More About Us'
+                }
+            ]
+        },
+        {
+            block : 'work',
+            content : [
+                {
+                    block : 'caption',
+                    pre : 'What We Do',
+                    text : 'Show Your Amazing Work'
+                },
             ]
         }
     ]
