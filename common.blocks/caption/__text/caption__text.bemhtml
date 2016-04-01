@@ -1,3 +1,0 @@
-block('caption').elem('text')(
-    tag()('h2')
-);

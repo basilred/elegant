@@ -1,3 +1,0 @@
-block('header').elem('text')(
-    tag()('h1')
-);
