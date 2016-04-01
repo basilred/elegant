@@ -1,0 +1,3 @@
+block('caption').elem('pre')(
+    tag()('span')
+);

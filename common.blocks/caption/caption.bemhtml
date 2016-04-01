@@ -1,0 +1,14 @@
+block('caption')(
+    content()(function () {
+        return [
+            {
+                elem : 'pre',
+                content : this.ctx.pre
+            },
+            {
+                elem : 'text',
+                content : this.ctx.text
+            }
+        ]
+    })
+);
