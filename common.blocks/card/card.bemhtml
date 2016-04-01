@@ -1,0 +1,27 @@
+block('card')(
+    content()(function () {
+        return [
+            {
+                elem : 'pic',
+                content : [
+                    {
+                        block : 'image',
+                        url : this.ctx.pic
+                    }
+                ]
+            },
+            {
+                elem : 'position',
+                content : this.ctx.position
+            },
+            {
+                elem : 'name',
+                content : this.ctx.name
+            },
+            {
+                elem : 'text',
+                content : this.ctx.text
+            }
+        ];
+    })
+);
