@@ -8,7 +8,7 @@ module.exports = {
         { elem : 'css', url : 'index.min.css' }
     ],
     scripts: [{ elem : 'js', url : 'index.min.js' }],
-    mods : { theme : 'islands' },
+    mods : { theme : 'elegant' },
     content : [
         {
             block : 'row',
