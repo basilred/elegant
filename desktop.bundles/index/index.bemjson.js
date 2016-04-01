@@ -77,6 +77,9 @@ module.exports = {
                     pre : 'What We Do',
                     text : 'Show Your Amazing Work'
                 },
+                {
+                    block : 'grid'
+                }
             ]
         }
     ]
