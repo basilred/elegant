@@ -1,6 +1,5 @@
 module.exports = {
     block : 'page',
-    title : 'Title of the page',
     title : 'Elegant',
     favicon : '/favicon.ico',
     head : [
