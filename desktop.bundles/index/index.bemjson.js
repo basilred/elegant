@@ -81,6 +81,81 @@ module.exports = {
                     block : 'grid'
                 }
             ]
+        },
+        {
+            block : 'people',
+            content : [
+                {
+                    block : 'caption',
+                    pre : 'Who We Are',
+                    text : 'The Amazing People Behind This'
+                },
+                {
+                    block : 'about',
+                    elem : 'text',
+                    content : [
+                        'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.'
+                    ]
+                },
+                {
+                    block : 'cards',
+                    content : [
+                        {
+                            elem : 'item',
+                            content : [
+                                {
+                                    block : 'card',
+                                    pic : '../../common.blocks/card/tobias.jpg',
+                                    name : 'Tobias Schneider',
+                                    position : 'CEO',
+                                    text : 'Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.'
+                                }
+                            ]
+                        },
+                        {
+                            elem : 'item',
+                            content : [
+                                {
+                                    block : 'card',
+                                    pic : '../../common.blocks/card/jack.jpg',
+                                    name : 'Jack Knife',
+                                    position : 'Designer',
+                                    text : 'Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.'
+                                }
+                            ]
+                        },
+                        {
+                            elem : 'item',
+                            content : [
+                                {
+                                    block : 'card',
+                                    pic : '../../common.blocks/card/ricki.jpg',
+                                    name : 'Ricki Hall',
+                                    position : 'Developer',
+                                    text : 'Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block : 'post',
+            content : [
+                {
+                    block : 'caption',
+                    pre : 'last post',
+                    text : 'We like to write'
+                },
+                {
+                    block : 'post-card',
+                    pic : '../../common.blocks/post-card/__pic/post-card__pic.jpg',
+                    date : '14 september 2015',
+                    header : 'Change Your Space',
+                    text : 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.'
+                }
+            ]
         }
     ]
 };
