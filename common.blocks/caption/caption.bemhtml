@@ -1,13 +1,15 @@
 block('caption')(
     content()(function () {
+        var ctx = this.ctx;
+        
         return [
             {
                 elem : 'pre',
-                content : this.ctx.pre
+                content : ctx.pre
             },
             {
                 elem : 'text',
-                content : this.ctx.text
+                content : ctx.text
             }
         ]
     })

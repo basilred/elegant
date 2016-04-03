@@ -1,26 +1,33 @@
 block('card')(
     content()(function () {
+        var ctx = this.ctx;
+
         return [
             {
                 elem : 'pic',
                 content : [
                     {
                         block : 'image',
-                        url : this.ctx.pic
+                        url : ctx.pic
                     }
                 ]
             },
             {
-                elem : 'position',
-                content : this.ctx.position
-            },
-            {
-                elem : 'name',
-                content : this.ctx.name
-            },
-            {
-                elem : 'text',
-                content : this.ctx.text
+                elem : 'data',
+                content : [
+                    {
+                        elem : 'position',
+                        content : ctx.position
+                    },
+                    {
+                        elem : 'name',
+                        content : ctx.name
+                    },
+                    {
+                        elem : 'text',
+                        content : ctx.text
+                    }
+                ]
             }
         ];
     })
