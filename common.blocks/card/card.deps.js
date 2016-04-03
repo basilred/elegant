@@ -1,4 +1,4 @@
 ({
     mustDeps: [ { block : 'image' } ],
-    shouldDeps: [ { elems : ['pic', 'name', 'position', 'text'] } ]
+    shouldDeps: [ { elems : ['pic', 'data', 'name', 'position', 'text'] } ]
 })
