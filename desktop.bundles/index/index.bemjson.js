@@ -162,6 +162,45 @@ module.exports = {
                     text : 'More From Our Blog'
                 }
             ]
+        },
+        {
+            block : 'contacts',
+            content : [
+                {
+                    block : 'caption',
+                    pre : 'contact us',
+                    text : 'Work With Us'
+                },
+                {
+                    block : 'map',
+                    content : [
+
+                    ]
+                },
+                {
+                    elem : 'items',
+                    content : [
+                        { header : 'location', info : '198 West 21th Street, New York, NY 10010' },
+                        { header : 'phone', info : '+88 (0) 101 1234567<br>+88 (0) 101 7654321' },
+                        { header : 'fax', info : '+88 (0) 202 1234567<br>+88 (0) 202 7654321' },
+                        { header : 'email', info : 'elegant@elegant.com<br>commercial@elegant.com' }
+                    ].map(function (item) {
+                        return {
+                            block : 'contact-card',
+                            content : [
+                                {
+                                    elem : 'header',
+                                    content : item.header
+                                },
+                                {
+                                    elem : 'info',
+                                    content : item.info
+                                }
+                            ]
+                        };
+                    })
+                }
+            ]
         }
     ]
 };
