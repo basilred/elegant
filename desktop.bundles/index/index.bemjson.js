@@ -1,7 +1,7 @@
 module.exports = {
     block : 'page',
     title : 'Elegant',
-    favicon : '/favicon.ico',
+    favicon : 'favicon.ico',
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
@@ -154,6 +154,73 @@ module.exports = {
                     date : '14 september 2015',
                     header : 'Change Your Space',
                     text : 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.'
+                },
+                {
+                    block : 'button',
+                    mix : [ { block : 'post', elem : 'button' } ],
+                    mods : { theme : 'elegant' },
+                    text : 'More From Our Blog'
+                }
+            ]
+        },
+        {
+            block : 'contacts',
+            content : [
+                {
+                    block : 'caption',
+                    pre : 'contact us',
+                    text : 'Work With Us'
+                },
+                {
+                    block : 'map',
+                    content : [
+
+                    ]
+                },
+                {
+                    elem : 'items',
+                    content : [
+                        { header : 'location', info : '198 West 21th Street, New York, NY 10010' },
+                        { header : 'phone', info : '+88 (0) 101 1234567<br>+88 (0) 101 7654321' },
+                        { header : 'fax', info : '+88 (0) 202 1234567<br>+88 (0) 202 7654321' },
+                        { header : 'email', info : 'elegant@elegant.com<br>commercial@elegant.com' }
+                    ].map(function (item) {
+                        return {
+                            block : 'contact-card',
+                            content : [
+                                {
+                                    elem : 'header',
+                                    content : item.header
+                                },
+                                {
+                                    elem : 'info',
+                                    content : item.info
+                                }
+                            ]
+                        };
+                    })
+                }
+            ]
+        },
+        {
+            block : 'footer',
+            content : [
+                {
+                    elem : 'inner',
+                    content : [
+                        {
+                            elem : 'copy',
+                            content : [
+                                '© 2014 Designed and Developed by Diogo Dantas'
+                            ]
+                        },
+                        {
+                            elem : 'email',
+                            content : [
+                                'Email: imdiogodantas@gmail.com'
+                            ]
+                        }
+                    ]
                 }
             ]
         }
