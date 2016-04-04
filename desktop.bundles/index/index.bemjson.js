@@ -201,6 +201,28 @@ module.exports = {
                     })
                 }
             ]
+        },
+        {
+            block : 'footer',
+            content : [
+                {
+                    elem : 'inner',
+                    content : [
+                        {
+                            elem : 'copy',
+                            content : [
+                                '© 2014 Designed and Developed by Diogo Dantas'
+                            ]
+                        },
+                        {
+                            elem : 'email',
+                            content : [
+                                'Email: imdiogodantas@gmail.com'
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };
