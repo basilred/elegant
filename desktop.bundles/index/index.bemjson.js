@@ -154,6 +154,12 @@ module.exports = {
                     date : '14 september 2015',
                     header : 'Change Your Space',
                     text : 'Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.'
+                },
+                {
+                    block : 'button',
+                    mix : [ { block : 'post', elem : 'button' } ],
+                    mods : { theme : 'elegant' },
+                    text : 'More From Our Blog'
                 }
             ]
         }
