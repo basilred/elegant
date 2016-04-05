@@ -174,7 +174,11 @@ module.exports = {
                 {
                     block : 'map',
                     content : [
-
+                        {
+                            block : 'image',
+                            mix : [ { block : 'map', elem : 'image' } ],
+                            url : '../../common.blocks/map/__image/map__image.jpg'
+                        }
                     ]
                 },
                 {
