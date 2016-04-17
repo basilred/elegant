@@ -1,5 +1,13 @@
 .header
 {
-    background: url(header.jpg) no-repeat 50% top;
-    height: 699px;
+    position: relative;
+
+    background: url(header.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+
+    @media (max-width: 768px) {
+        min-height: 699px;
+    }
 }

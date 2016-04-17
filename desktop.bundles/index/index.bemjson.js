@@ -15,6 +15,13 @@ module.exports = {
             block : 'header',
             content : [
                 {
+                    block : 'header',
+                    elem : 'text',
+                    content : [
+                        'Say <span>Haloa</span> to your Portfolio'
+                    ]
+                },
+                {
                     block : 'row',
                     mix : [ { block : 'header', elem : 'menu-row' } ],
                     content : [
@@ -27,19 +34,6 @@ module.exports = {
                             mix : [ { block : 'header', elem : 'menu' } ],
                             content : [
                                 'Menu'
-                            ]
-                        },
-                        {
-                            elem : 'col',
-                            elemMods : { lw : 12 },
-                            content : [
-                                {
-                                    block : 'header',
-                                    elem : 'text',
-                                    content : [
-                                        'Say <span>Haloa</span> to your Portfolio'
-                                    ]
-                                }
                             ]
                         }
                     ]
