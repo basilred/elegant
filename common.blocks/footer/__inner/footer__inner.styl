@@ -8,4 +8,15 @@
     max-width: 768px;
 
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        height: auto;
+
+        > * {
+            padding: 1rem;
+        }
+    }
 }
