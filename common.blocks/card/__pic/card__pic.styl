@@ -3,15 +3,23 @@
     overflow: hidden;
 
     width: inherit;
+    // Высота нужна чтобы было красиво выровнено по высоте
     height: 12rem;
 
+    line-height: 0;
+
     @media (max-width: 768px) {
-        height: 100%;
+        height: auto;
     }
 
     & .image
     {
         min-width: 100%;
         min-height: 100%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            min-height: 0%;
+        }
     }
 }
